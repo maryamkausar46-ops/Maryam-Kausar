@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class 12 Math Tutor</title>
+  <link rel="stylesheet" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/genai": "https://esm.sh/@google/genai@^0.7.0",
+        "marked": "https://esm.sh/marked@^15.0.7"
+      }
+    }
+  </script>
+</head>
+<body>
+  <main class="chat-container">
+    <header>
+      <h1>Class 12 Math Tutor</h1>
+      <p>Your AI-powered guide for PTB Class 12 Mathematics</p>
+    </header>
+    <div class="message-list" id="message-list">
+      <!-- Messages will be appended here -->
+    </div>
+    <form id="chat-form" class="chat-form">
+      <input type="text" id="chat-input" placeholder="Ask a math problem..." autocomplete="off" required>
+      <button type="submit" aria-label="Send message">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+        </svg>
+      </button>
+    </form>
+  </main>
+  <script type="module" src="index.tsx"></script>
+</body>
+</html>
